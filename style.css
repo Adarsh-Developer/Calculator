@@ -79,6 +79,7 @@ button {
     left: 50%;
     transform: translateX(-50%);
     border-radius: none;
+    overflow: hidden;
   }
   .buttons__container {
     background-color: #131313;
