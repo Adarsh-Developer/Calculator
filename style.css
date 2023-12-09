@@ -85,6 +85,10 @@ button {
     background-color: #000;
     position: relative;
   }
+  .screen{
+    bottom: 20px;
+    right: 30px;
+  }
   .container {
     height: auto;
     width: 100vw;

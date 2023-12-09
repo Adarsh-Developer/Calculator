@@ -14,8 +14,6 @@ operators.forEach(function(e){
 equal.addEventListener('click', function(){
   if(screen.innerHTML !== ''){
     screen.innerHTML = eval(screen.innerHTML)
-  }else{
-    audio.play()
   }
 })
 
