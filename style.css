@@ -17,12 +17,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #222;
 }
 
 .container {
   background-color: #000;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .screen__container {
@@ -43,7 +45,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 75px);
   gap: 10px;
-  background-color: rgb(63, 63, 63);
+  background-color: #131313;
   padding: 20px 10px 10px 10px;
 }
 
@@ -55,7 +57,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
-  background-color: #000;
+  background-color: transparent;
   border-radius: 5px;
   color: #fff;
   font-size: 30px;
@@ -76,9 +78,10 @@ button {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: none;
   }
   .buttons__container {
-    background-color: rgb(63, 63, 63);
+    background-color: #131313;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -86,8 +89,10 @@ button {
   .buttons {
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
+    background-color: #131313;
   }
   button {
     width: initial;
+    background-color: transparent;
   }
 }
