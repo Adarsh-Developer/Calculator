@@ -26,6 +26,6 @@ clear.addEventListener("click", function () {
 });
 
 cross.addEventListener("click", function () {
-  screen.innerHTML = screen.innerHTML.slice(0, -1);
+  screen.innerHTML = screen.innerHTML.slice(0, -5);
   operation = operation.slice(0, -1);
 });
