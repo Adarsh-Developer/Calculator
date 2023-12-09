@@ -3,7 +3,6 @@ const screen = document.querySelector(".screen");
 const equal = document.querySelector(".equal");
 const clear = document.querySelector(".clear");
 const cross = document.querySelector(".cross");
-const audio = new Audio("./audio.mp3");
 
 let operation = "";
 
@@ -16,7 +15,8 @@ operators.forEach(function (e) {
 
 equal.addEventListener("click", function () {
   if (screen.innerHTML !== "") {
-    screen.innerHTML = eval(operation);
+    screen.innerHTML = eval(operation)
+    operation = eval(operation)
   }
 });
 
