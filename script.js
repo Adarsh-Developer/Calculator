@@ -11,7 +11,11 @@ operators.forEach(function(e){
 })
 
 equal.addEventListener('click', function(){
-  screen.innerHTML = eval(screen.innerHTML)
+  if(screen.innerHTML === ''){
+    screen.innerHTML = 'bhen ke lode'
+  }else{
+    screen.innerHTML = eval(screen.innerHTML)
+  }
 })
 
 clear.addEventListener('click', function(){

@@ -26,11 +26,17 @@ body {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  height: 80%;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .screen__container {
   height: 200px;
   position: relative;
+  z-index: 0;
 }
 
 .screen {
@@ -39,6 +45,17 @@ body {
   right: 20px;
   bottom: 20px;
   font-size: 35px;
+  z-index: 0;
+}
+
+.buttons__container {
+  background-color: #131313;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.2));
+  position: relative;
+  z-index: 1;
 }
 
 .buttons {
@@ -74,6 +91,7 @@ button {
     position: relative;
   }
   .container {
+    height: auto;
     width: 100vw;
     position: absolute;
     bottom: 0;
@@ -82,19 +100,11 @@ button {
     border-radius: none;
     overflow: hidden;
   }
-  .buttons__container {
-    background-color: #131313;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
   .buttons {
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
-    background-color: #131313;
   }
   button {
     width: initial;
-    background-color: transparent;
   }
 }
